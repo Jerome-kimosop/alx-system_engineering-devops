@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head -10
+ls -lt | grep "^-" | head -n 10 | awk '{print $6, $7, $8, $9}'
